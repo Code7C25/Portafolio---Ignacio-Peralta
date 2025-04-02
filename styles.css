@@ -1,0 +1,167 @@
+/*Variables CSS*/
+:root {
+    --body-bg-color: #b2a8a8; /*color de fondo*/
+    --text-color: #ffffff; /*color de la fuente*/
+    --colorh1-color: red; /*color de la fuente*/
+    --fondo-proyectos: #be9d9d; /*color de fondo de la tarjeta*/
+    --btn-bg-color: lightgrey ; /*color de fondo de los botones*/
+    --btn-hover-bg-color: #333333; /* Sombra más clara en los botones */
+    --highlight-color: #5f069a; /*color de resaltado*/
+}
+/*aplicar las variables CSS creadas por el root*/
+
+body {
+    display: flex; /*flexbox - parte4*/
+    justify-content: center;
+    background: #242424  ; /*color de fondo*/
+    color: var(--text-color); /*color de la fuente*/
+    font-family: 'Segoe', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+body.dark-mode {
+        background: white;
+        color: red;
+        }
+
+        /* Estilo del botón */
+button {
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        border: none;
+        background: #333;
+        color: white;
+        border-radius: 5px;
+        transition: background 0.3s;
+        font-size: 16px;
+    }
+
+button:hover {
+        background: blanchedalmond;
+        }
+
+
+h1,h2,.tit{
+    font-size: 40px;
+    color: #35ED86;
+    margin-bottom: 30px;
+}
+
+
+
+
+h4{
+    font-size: 15px;
+    color: slategrey;
+    margin-bottom: 5px;
+      }
+p{
+    color: powderblue;
+    font-size: 20px;
+}
+
+.imag{
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.imag:hover {
+  transform: scale(1.1); /* Hace que la imagen crezca */
+  opacity: 0.8; /* Reduce la opacidad */
+}
+
+/* estilo de la barra de navegacion*/
+a {
+    ont-size: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Agregar transición suave */
+}
+
+a:hover {
+    color: limegreen; /* Resaltar al pasar el cursor */
+}
+
+/*Titulo del header*/
+.titulo {
+    display: flex; /* Flexbox */
+    margin: 3rem; /* Margen superior e inferior */
+    justify-content: center; /* Centrado en pantallas pequeñas */
+}
+
+/*barra de navegacion*/
+.navigation {
+    display: flex; /*flexbox*/
+    gap: 3rem; /*espacio entre los elementos*/
+    list-style: none; /*quita los puntos de la lista*/
+    justify-content: center; /*justifica los elementos a la derecha*/
+    margin: 0 3rem; /*margen superior e inferior*/    
+}
+/* enlaces de la barra de navegacion*/
+.navigation li {
+    font-size: 1rem;
+    width: 120px; /*ancho de los elementos*/
+    text-align: center;
+    padding: 0.5rem; /*espacio interno*/
+    border-radius: 2rem; /*bordes redondeados*/
+    background: darkgrey; /* Color de fondo */
+    box-shadow: 0 0 0.5rem purple; /* Sombra */
+    transition: background-color 0.5s ease; /* Transición suave */
+}
+
+/* al pasar el cursor por los enlaces de la barra de navegacion cambia el color*/
+.navigation li:hover {
+    background-color: slategrey; /* Color al pasar el cursor */
+}
+
+/*Todos los elementos dentro del contenedor principal*/
+.main-container {
+    display: flex; /*flexbox*/
+    flex-direction: column; /*direccion de los elementos*/
+    gap: 1rem; /* Ajuste menor espacio entre secciones */
+}
+
+/* Estilos generales para las secciones */
+section {
+    padding: 2rem 0;
+}
+
+/*Responsive design*/
+/* Media Queries agrupadas */
+
+/* Estilos para pantallas pequeñas, celular de 768px o menos */
+@media (max-width: 768px) {
+    .titulo {
+        justify-content: center; /*centra el contenido*/
+    }
+    .navigation{
+        flex-direction: column; /*cambia la direccion de los elementos*/
+        gap: 1rem; /*espacio entre los elementos*/
+        align-items: center;
+    }
+}
+
+/* Estilos para pantallas medianas, tablet de 768px a 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .titulo {
+        justify-content: center; /*centra el contenido*/
+    }
+    .navigation{
+        gap: 2rem; /*espacio entre los elementos*/
+        justify-items: center;
+    }
+}
+
+/* Estilos para pantallas grandes, desktop de 1024px o más */
+@media (min-width: 1024px) {
+    .titulo {
+        justify-content: flex-start; /*justifica el contenido a la izquierda*/
+    }
+    .navigation{
+        gap: 3rem; /*espacio entre los elementos*/
+        justify-items: flex-end; /*justifica los elementos a la derecha*/
+        margin: 0  3rem; /*margen superior e inferior*/
+    } 
+}

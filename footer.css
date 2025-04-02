@@ -1,0 +1,59 @@
+/* Estilos generales para el footer */
+footer {
+    background-color: #313030; /* Fondo del footer en color gris oscuro */
+    color: red; /* Texto en color blanco */
+    padding: 20px 0; /* Espaciado interno arriba y abajo */
+    text-align: center; /* Centrar el texto */
+  }
+  
+  /* Contenedor principal del footer */
+  .footer-container {
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar el contenedor horizontalmente */
+    display: flex; /* Usar flexbox para el layout */
+    flex-direction: column; /* Colocar los elementos en una columna */
+    align-items: center; /* Centrar los elementos horizontalmente */
+  }
+  
+  /* Estilos para la sección de información del footer */
+  .footer-info {
+    margin-bottom: 10px; /* Espacio debajo de la información */
+  }
+  
+ 
+/*responsive design*/
+/* Media Queries agrupadas */
+
+/* Estilos para pantallas pequeñas, celular de 768px o menos */
+@media (max-width: 768px) {
+    .footer-container {
+        padding: 10px; /* Espaciado interno reducido */
+    }
+  
+    .footer-info {
+        font-size: 0.9rem; /* Tamaño de fuente reducido */
+    }
+  }
+  
+  /* Estilos para pantallas medianas, tablet de 768px a 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .footer-container {
+        padding: 15px; /* Espaciado interno ajustado */
+    }
+  
+    .footer-info {
+        font-size: 1rem; /* Tamaño de fuente ajustado */
+    }
+  }
+
+  /* Estilos para pantallas grandes, desktop de 1024px o más */
+@media (min-width: 1024px) {
+    .footer-container {
+        padding: 20px; /* Espaciado interno normal */
+    }
+  
+    .footer-info {
+        font-size: 1.1rem; /* Tamaño de fuente normal */
+    }
+  }
+  

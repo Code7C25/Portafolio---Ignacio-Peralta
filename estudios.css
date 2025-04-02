@@ -1,0 +1,76 @@
+/* Estilos para la sección de estudios */
+.estudios {
+    display: flex;
+    justify-content: center; /*centra el contenido*/
+    padding: 2rem; /*espacio interno*/
+    color: powderblue; /*color de la fuente*/
+    margin: 0 auto;  
+}
+
+/*contenedor general que engloba los estudios*/
+.container-estudios {
+    width: 100%; /*ancho del contenedor*/
+    padding: 1rem; /*espacio interno*/
+    margin-top: 1rem; /*margen superior*/
+    line-height: 2.5rem; /*espacio entre los parrafos*/
+    font-size: large; /*tamaño de la fuente*/
+    margin: 5rem; /*margen superior e inferior*/
+   
+}
+
+/* Responsive design */
+
+/* Media Queries agrupadas */
+
+/* Estilos para pantallas pequeñas, celular de 768px o menos */
+@media (max-width: 768px) {
+    .container-estudios {
+        width: 100%; /* Ancho del contenedor */
+        margin-top: 0rem; /* Margen superior */
+        font-size: small; /* Tamaño de la fuente más pequeño */
+        padding: 1rem; /* Reducir espacio interno */
+    }
+
+    .estudios {
+        width: 100%; /* Ancho completo en pantallas pequeñas */
+        padding: 1rem; /* Espacio interno reducido */
+    }
+}
+
+/* Estilos para pantallas medianas, tablet de 768px a 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .estudios {
+        width: 75%; /* Ancho del contenedor */
+        padding: 2rem; /* Espacio interno adecuado */
+    }
+
+    .container-estudios {
+        font-size: 1.2rem; /* Ajustar tamaño de la fuente para tablets */
+    }
+
+    .container-estudios-section {
+        display: flex; /* Flexbox para alineación */
+        align-items: center; /* Centra el contenido */
+        width: 100%; /* Ancho completo del contenedor */
+        gap: 2rem; /* Espacio entre los elementos */
+    }
+}
+
+/* Estilos para pantallas grandes, desktop de 1024px o más */
+@media (min-width: 1024px) {
+    .estudios {
+        width: 75%; /* Ancho del contenedor */
+        padding: 2rem; /* Espacio interno adecuado */
+    }
+
+    .container-estudios {
+        font-size: 1.3rem; /* Tamaño de fuente más grande */
+    }
+
+    .container-estudios-section {
+        display: flex; /* Flexbox para alineación */
+        align-items: center; /* Centra el contenido */
+        width: 100%; /* Ancho completo del contenedor */
+        gap: 2rem; /* Espacio entre los elementos */
+    }
+}
