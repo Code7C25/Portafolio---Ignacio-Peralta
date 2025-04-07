@@ -1,0 +1,42 @@
+#contacto {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#contacto h2 {
+    margin-bottom: 20px;
+}
+
+#contacto ul {
+    display: flex;
+    justify-content: center;  /* Centra los elementos horizontalmente */
+    flex-wrap: wrap;          /* Permite que los elementos se muevan a la siguiente línea en pantallas pequeñas */
+    gap: 10px;               /* Espaciado entre los elementos */
+    padding: 0;
+    list-style: none;
+}
+
+#contacto li {
+    display: flex;
+    flex-direction: column;  /* Muestra los elementos en columna (imagen + texto) */
+    align-items: center;     /* Centra los elementos dentro de cada li */
+    width: 120px;            /* Ajusta el ancho de cada item, puedes cambiarlo según el diseño */
+}
+
+.style-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    #contacto ul {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        align-items: center;     /* Centra los elementos */
+    }
+
+    #contacto li {
+        width: auto;            /* El ancho se ajustará al contenido */
+        margin-bottom: 20px;    /* Añade margen inferior para los elementos en columna */
+    }
+}
